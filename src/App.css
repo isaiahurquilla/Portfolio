@@ -1,0 +1,218 @@
+#root {
+  min-height: 100vh;
+  padding: 1rem;
+  text-align: left;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* NAVBAR */
+.nav {
+  position: sticky;
+  top: 0;
+  background: white;
+  border-bottom: 1px solid #e9e9e9;
+  z-index: 50;
+}
+
+.nav__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 16px;
+}
+
+.nav__brand {
+  font-weight: 800;
+  color: #111;
+  text-decoration: none;
+}
+
+.nav__links {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.nav__link {
+  color: #222;
+  text-decoration: none;
+  padding: 8px 10px;
+  border-radius: 10px;
+}
+
+.nav__link:hover {
+  background: #f2f2f2;
+}
+
+.nav__link--active {
+  background: #111;
+  color: white;
+}
+
+.nav__dropdown {
+  position: relative;
+}
+
+/* Fix dropdown button readability */
+.nav__dropdownBtn {
+  background: #ffffff;
+  color: #111111;
+  border: 1px solid #e6e6e6;
+  padding: 8px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.nav__dropdownBtn:hover {
+  background: #f2f2f2;
+}
+
+/* Ensure dropdown menu text is visible */
+.nav__menu {
+  background: #ffffff;
+  color: #111111;
+  border: 1px solid #e6e6e6;
+}
+
+/* Ensure menu items inherit correct color */
+.nav__menuItem {
+  color: #111111;
+}
+
+.nav__chev {
+  margin-left: 6px;
+}
+
+.nav__menu {
+  position: absolute;
+  right: 0;
+  top: 44px;
+  min-width: 160px;
+  background: white;
+  border: 1px solid #e6e6e6;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.nav__menuItem {
+  display: block;
+  padding: 10px 12px;
+  color: #222;
+  text-decoration: none;
+}
+
+.nav__menuItem:hover {
+  background: #f2f2f2;
+}
+
+.nav__hamburger {
+  display: none;
+  background: transparent;
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+  padding: 8px 10px;
+  cursor: pointer;
+}
+
+/* Mobile */
+.nav__mobile {
+  display: none;
+  padding: 10px 16px 14px;
+  border-top: 1px solid #eee;
+  gap: 8px;
+}
+
+@media (max-width: 700px) {
+  .nav__links {
+    display: none;
+  }
+  .nav__hamburger {
+    display: inline-flex;
+  }
+  .nav__mobile {
+    display: grid;
+  }
+}
+/* ===== Resume / Page Styling ===== */
+.page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1.25rem 1rem;
+}
+
+.page h1 {
+  margin: 0 0 0.75rem 0;
+  font-size: 2rem;
+}
+
+.page h2 {
+  margin: 1.25rem 0 0.5rem;
+  font-size: 1.25rem;
+  border-bottom: 1px solid #e6e6e6;
+  padding-bottom: 0.35rem;
+}
+
+.page p {
+  margin: 0.25rem 0 0.75rem;
+  line-height: 1.6;
+}
+
+.page ul {
+  margin: 0.25rem 0 0.75rem 1.25rem;
+  padding: 0;
+}
+
+.page li {
+  margin: 0.35rem 0;
+  line-height: 1.55;
+}
+
+.page strong {
+  font-weight: 700;
+}
+
+@media (max-width: 600px) {
+  .page {
+    padding: 1rem 0.75rem;
+  }
+  .page h1 {
+    font-size: 1.7rem;
+  }
+}
