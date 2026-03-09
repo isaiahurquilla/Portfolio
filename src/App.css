@@ -216,3 +216,79 @@
     font-size: 1.7rem;
   }
 }
+.list {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.card {
+  border: 1px solid #e6e6e6;
+  border-radius: 14px;
+  padding: 1rem;
+  background: white;
+}
+
+.prose p {
+  margin: 0.6rem 0;
+}
+/* ===== Dark mode support ===== */
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #0b0d12;
+    color: #e7e7e7;
+  }
+
+  /* Navbar stays readable */
+  .nav {
+    background: #0f1218;
+    border-bottom: 1px solid #232836;
+  }
+
+  .nav__brand,
+  .nav__link,
+  .nav__menuItem {
+    color: #e7e7e7;
+  }
+
+  .nav__link:hover {
+    background: #1a2030;
+  }
+
+  .nav__link--active {
+    background: #e7e7e7;
+    color: #0b0d12;
+  }
+
+  .nav__dropdownBtn {
+    background: #0f1218;
+    color: #e7e7e7;
+    border: 1px solid #232836;
+  }
+
+  .nav__menu {
+    background: #0f1218;
+    border: 1px solid #232836;
+  }
+
+  /* Blog cards + buttons */
+  .card {
+    background: #0f1218;
+    border: 1px solid #232836;
+  }
+
+  .btn {
+    background: #0f1218;
+    border: 1px solid #232836;
+    color: #e7e7e7;
+  }
+
+  .btn:hover {
+    background: #1a2030;
+  }
+
+  /* Subtle text */
+  .muted {
+    opacity: 0.85;
+  }
+}
