@@ -6,8 +6,7 @@ export default function Blog() {
     <section className="page">
       <h1>Blog</h1>
       <p className="muted">
-        Posts about my projects, what I’m learning, and my journey in software +
-        robotics.
+        Posts about my projects, what I’m learning, and my journey in Computer Science.
       </p>
 
       <div className="list">

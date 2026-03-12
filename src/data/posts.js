@@ -41,17 +41,19 @@ Next, I want to improve my state management and add better error handling to my 
   {
     id: 3,
     title: "Robotics + Software: What I’m Learning",
-    date: "2026-03-08",
-    slug: "robotics-and-software",
+    date: "2026-03-11",
+    slug: "robotics: Humanoid AI + Combat",
     excerpt:
-      "How combat robotics and humanoid AI workshops are helping me think like an engineer and developer.",
+      "How combat robotics and humanoid AI workshops are helping me think like a researcher and developer.",
     content: `
 Robotics is one of the best ways to practice real engineering:
 
-- Debugging hardware + software together
-- Iterating quickly after failures
+- Building combat robots and designing new robots in CAD
 - Documenting changes and testing improvements
-- Working with teammates under time constraints
+- Working with teammates in buiding and programming robots
+- Researching how to solve new problems and submit a researchpaper to a conference
+
+
 
 I’ve worked with Arduino/Raspberry Pi, C++/Python, CAD, soldering, and circuit boards. These experiences help me stay disciplined with testing and problem-solving.
 `,
