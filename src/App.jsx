@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -16,7 +17,7 @@ function Layout({ children }) {
     <div>
       <Navbar />
       <main style={{ padding: "1rem" }}>{children}</main>
-      {/* Footer goes here */}
+      <Footer />
     </div>
   );
 }

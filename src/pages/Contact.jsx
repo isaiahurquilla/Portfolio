@@ -1,47 +1,67 @@
+import { useState } from "react";
+
 export default function Contact() {
+  const [status, setStatus] = useState("");
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    setStatus("Submitted! (frontend only for now)");
+    e.currentTarget.reset();
+  }
+
   return (
     <section className="page">
       <h1>Contact</h1>
+      <p className="muted">
+        Want to connect? Send a message or reach out through my social links.
+      </p>
 
-      <h2>Social</h2>
-      <ul>
-        <li>
-          <a href="https://www.linkedin.com/in/isaiah-urquilla-0091763b6/" target="_blank" rel="noreferrer">
-            LinkedIn
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/isaiahurquilla" target="_blank" rel="noreferrer">
-            GitHub
-          </a>
-        </li>
-      </ul>
+      <div className="grid" style={{ gridTemplateColumns: "1fr 1fr" }}>
+        <div className="card">
+          <h2 style={{ marginTop: 0 }}>Social</h2>
+          <div className="btnRow">
+            <a
+              className="btn"
+              href="https://www.linkedin.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn
+            </a>
+            <a
+              className="btn"
+              href="https://github.com/isaiahurquilla"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>
+          </div>
+        </div>
 
-      <h2>Message Me</h2>
-      <form
-        onSubmit={(e) => {
-          e.preventDefault();
-          alert("Submitted! (frontend only for now)");
-        }}
-        style={{ display: "grid", gap: "0.75rem", maxWidth: "420px" }}
-      >
-        <label>
-          Name
-          <input name="Isaiah Urquilla" required />
-        </label>
+        <div className="card">
+          <h2 style={{ marginTop: 0 }}>Message Me</h2>
+          <form onSubmit={handleSubmit} style = {{ display: "grid", gap: "0.75rem" }}>
+          <label>
+            Name
+            <input name="name" required />
+          </label>
 
-        <label>
-          Email
-          <input name="isaiah.urquilla@gmail.com" type="email" required />
-        </label>
+          <label>
+            Email
+            <input name="email" type="email" required />      
+          </label>
 
-        <label>
-          Message
-          <textarea name="message" rows="5" required />
-        </label>
+          <label>
+            Message
+            <textarea name="message" rows="5" required />
+          </label>
 
-        <button type="submit">Submit</button>
-      </form>
+          <button type = "submit">Submit</button>
+          {status ? <p className = "muted">{status}</p> : null}
+          </form>
+        </div>
+      </div>
     </section>
   );
 }

@@ -327,3 +327,56 @@
     color: #e7e7e7;
   }
 }
+/* ===== Footer ===== */
+.footer {
+  border-top: 1px solid #e6e6e6;
+  margin-top: 2rem;
+}
+
+.footer__inner {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.footer__links {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+/* ===== Forms ===== */
+input,
+textarea {
+  width: 100%;
+  padding: 0.7rem 0.8rem;
+  border-radius: 12px;
+  border: 1px solid #e6e6e6;
+  font: inherit;
+  background: white;
+  color: inherit;
+}
+
+label {
+  display: grid;
+  gap: 0.35rem;
+  font-weight: 600;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .footer {
+    border-top: 1px solid #232836;
+  }
+
+  input,
+  textarea {
+    background: #0f1218;
+    border: 1px solid #232836;
+    color: #e7e7e7;
+  }
+}
