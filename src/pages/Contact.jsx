@@ -1,67 +1,80 @@
-import { useState } from "react";
+import { useLocation } from "react-router-dom";
 
 export default function Contact() {
-  const [status, setStatus] = useState("");
-
-  function handleSubmit(e) {
-    e.preventDefault();
-    setStatus("Submitted! (frontend only for now)");
-    e.currentTarget.reset();
-  }
+  const { search } = useLocation();
+  const sent = new URLSearchParams(search).get("sent") === "1";
 
   return (
     <section className="page">
       <h1>Contact</h1>
-      <p className="muted">
-        Want to connect? Send a message or reach out through my social links.
-      </p>
 
-      <div className="grid" style={{ gridTemplateColumns: "1fr 1fr" }}>
-        <div className="card">
-          <h2 style={{ marginTop: 0 }}>Social</h2>
-          <div className="btnRow">
-            <a
-              className="btn"
-              href="https://www.linkedin.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              LinkedIn
-            </a>
-            <a
-              className="btn"
-              href="https://github.com/isaiahurquilla"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              GitHub
-            </a>
-          </div>
-        </div>
+      {sent ? (
+        <p className="muted">✅ Message sent! Thanks for reaching out.</p>
+      ) : null}
 
-        <div className="card">
-          <h2 style={{ marginTop: 0 }}>Message Me</h2>
-          <form onSubmit={handleSubmit} style = {{ display: "grid", gap: "0.75rem" }}>
+      <h2>Social</h2>
+      <hr />
+
+      <ul>
+        <li>
+          <a
+            href="https://www.linkedin.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://github.com/isaiahurquilla"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
+        </li>
+      </ul>
+
+      <h2 style={{ marginTop: "2rem" }}>Message Me</h2>
+      <hr />
+
+      <form action="https://formspree.io/f/mzdjrqlz" method="POST">
+        <p>
           <label>
-            Name
-            <input name="name" required />
+            Name{" "}
+            <input name="name" required style={{ marginLeft: "0.5rem" }} />
           </label>
+        </p>
 
+        <p>
           <label>
-            Email
-            <input name="email" type="email" required />      
+            Email{" "}
+            <input
+              name="email"
+              type="email"
+              required
+              style={{ marginLeft: "0.5rem" }}
+            />
           </label>
+        </p>
 
-          <label>
+        <p>
+          <label style={{ display: "block" }}>
             Message
-            <textarea name="message" rows="5" required />
+            <br />
+            <textarea name="message" rows="6" required />
           </label>
+        </p>
 
-          <button type = "submit">Submit</button>
-          {status ? <p className = "muted">{status}</p> : null}
-          </form>
-        </div>
-      </div>
+        <input
+          type="hidden"
+          name="_redirect"
+          value="https://portfolio-rust-eta-21.vercel.app/contact?sent=1"
+        />
+
+        <button type="submit">Submit</button>
+      </form>
     </section>
   );
 }
