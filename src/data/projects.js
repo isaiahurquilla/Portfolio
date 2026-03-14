@@ -16,22 +16,30 @@ export const projects = [
       "Organized content sections for a portfolio feel",
     ],
   },
-  {
-    id: 2,
-    title: "Nutrition / Calorie Calculator",
-    slug: "nutrition-calorie-calculator",
-    description:
-      "Calculates calories based on ingredients and serving sizes entered by the user.",
-    techStack: ["React Native", "Expo", "JavaScript"],
-    image: null,
-    github: "https://github.com/isaiahurquilla/REPO_LINK_HERE",
-    live: null,
-    highlights: [
-      "Validated user input for accurate calculations",
-      "Clear UI for entering ingredients and servings",
-      "Logic structured for future expansion (history/macros)",
-    ],
-  },
+{
+  id: 2,
+  title: "Nutrition Tracker",
+  slug: "nutrition-tracker",
+  description:
+    "A mobile nutrition app for tracking daily meals, calories, and protein. Users can search foods by name or brand, log servings, and review nutrition totals across the day and week.",
+  techStack: [
+    "React Native",
+    "Expo",
+    "TypeScript",
+    "Expo Router",
+    "AsyncStorage",
+    "USDA API",
+    "Open Food Facts API",
+  ],
+  image: null,
+  github: "https://github.com/isaiahurquilla/nutrition-app",
+  live: null,
+  highlights: [
+    "Designed a reusable component-based UI for food search, meal logging, and nutrition summaries",
+    "Implemented hybrid food search using USDA for generic foods and Open Food Facts for branded products",
+    "Built persistent daily history with weekly views, serving-based calculations, and unit support for grams and fl oz",
+  ],
+},
   {
     id: 3,
     title: "DBCore4U Clothing Storefront",
