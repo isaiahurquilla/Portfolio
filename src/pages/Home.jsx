@@ -24,7 +24,7 @@ export default function Home() {
       </div>
 
       <div style={{ marginTop: "1rem", display: "flex", gap: "0.75rem" }}>
-        <Link to="/portfolio">View Portfolio</Link>
+        <Link to="/portfolio">View Project</Link>
         <Link to="/contact">Contact Me</Link>
       </div>
     </section>

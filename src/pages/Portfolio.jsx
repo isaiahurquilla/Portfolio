@@ -4,7 +4,7 @@ import { projects } from "../data/projects";
 export default function Portfolio() {
   return (
     <section className="page">
-      <h1>Portfolio</h1>
+      <h1>Projects</h1>
       <p className="muted">
         A selection of projects I’ve built in mobile development, web
         development, and software systems.
