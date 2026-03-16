@@ -17,7 +17,7 @@ export default function Footer() {
           </a>
           <a
             className="btn"
-            href="https://www.linkedin.com/"
+            href="https://www.linkedin.com/in/isaiah-urquilla-0091763b6/"
             target="_blank"
             rel="noopener noreferrer"
           >

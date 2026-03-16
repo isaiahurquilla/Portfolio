@@ -3,23 +3,28 @@ export default function About() {
     <section className="page">
       <h1>About</h1>
       <p>
-        Hello, This is the about me page. As i stated on the home page, I am currently a full-time student
-        at CSUB majoring in Computer Science. I was born and raised in California and found my love for programming in high school.
-        I enjoy working on web applications, mobile apps, and learning more about deep learning and artificial intelligence.
-        I have had the opportunity to work on some individual and collaborative group projects that I am very proud of and I hope to continue building more projects that can solve real-world problems.
+        I'm a Computer Science student at CSUB with a strong interest in frontend
+        development and building applications that solve real problems. I started
+        programming in high school and have since developed projects in both web
+        and mobile development, with experience using React, JavaScript, and APIs
+        to create responsive, data-driven user experiences. I enjoy building clean,
+        maintainable interfaces and continuing to grow as a software engineer
+        through both individual and collaborative projects.
       </p>
 
-      <h2>Specializations</h2>
+      <h2>Focus Areas</h2>
       <ul>
-        <li>Web Programming</li>
-        <li>Database building</li>
-        <li>Deep Learning</li>
+        <li>Frontend Development</li>
+        <li>Responsive Web and Mobile UI</li>
+        <li>API Integration and Data-Driven Applications</li>
       </ul>
 
       <h2>Skills</h2>
-      <p>Python, Java, JavaScript, React, Node.js, SQL, and C++</p>
+      <p>
+        JavaScript, React, React Native, TypeScript, Python, Java, Node.js, SQL,
+        and C++
+      </p>
 
-      {/* Resume download button (add resume.pdf to src/assets later) */}
       <div style={{ marginTop: "1rem" }}>
         <a href="/resume" role="button">
           View Resume
