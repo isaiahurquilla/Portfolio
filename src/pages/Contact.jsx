@@ -1,3 +1,4 @@
+//THIS PAGE USES FOREMSPREE.IO TO HANDLE CONTACT FORM SUBMISSIONS
 import { useLocation } from "react-router-dom";
 
 export default function Contact() {

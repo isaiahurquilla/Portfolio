@@ -49,15 +49,13 @@ export default function Resume() {
         <li>
           <strong>Nutrition / Calorie Calculator App</strong> (React Native,
           Expo) — Calculates calories from ingredients and serving sizes with
-          validated user input.
+          validated user input. This was made for personal usage 
+          to track my nutrition lose weight.
         </li>
         <li>
           <strong>DBCore4U Clothing App/Website</strong> (React Native, Expo) —
-          Branded storefront-style UI built with reusable components.
-        </li>
-        <li>
-          <strong>Library Information System</strong> (Java, IntelliJ) — Faux
-          library system for books, magazines, and movies using OOP design.
+          Branded storefront-style UI built with reusable components for 
+          my stepfather's clothing business.
         </li>
       </ul>
 

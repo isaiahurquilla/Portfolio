@@ -56,20 +56,4 @@ export const projects = [
       "Designed for easy content updates",
     ],
   },
-  {
-    id: 4,
-    title: "Library Information System",
-    slug: "library-information-system",
-    description:
-      "A Java-based faux library system to find information on books, magazines, and movies.",
-    techStack: ["Java", "IntelliJ IDEA"],
-    image: null,
-    github: "https://github.com/isaiahurquilla/Library",
-    live: null,
-    highlights: [
-      "Object-oriented design for different media types",
-      "Organized code structure for maintainability",
-      "Search/display of item information",
-    ],
-  },
 ];
