@@ -45,7 +45,7 @@ export default function Navbar() {
             Resume
           </NavLink>
           <NavLink to="/portfolio" className={linkClass}>
-            Portfolio
+            Projects
           </NavLink>
 
           {/* Dropdown (must include Blog) */}
@@ -106,7 +106,7 @@ export default function Navbar() {
             Resume
           </NavLink>
           <NavLink to="/portfolio" className={linkClass} onClick={closeAll}>
-            Portfolio
+            Projects
           </NavLink>
           <NavLink to="/blog" className={linkClass} onClick={closeAll}>
             Blog

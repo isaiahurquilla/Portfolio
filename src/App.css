@@ -380,3 +380,82 @@ label {
     color: #e7e7e7;
   }
 }
+/* ===== Shared UI ===== */
+.muted {
+  color: #5f6b7a;
+}
+
+.btnRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.72rem 1rem;
+  border-radius: 12px;
+  border: 1px solid #111827;
+  background: #111827;
+  color: #ffffff;
+  text-decoration: none;
+  transition: transform 0.16s ease, opacity 0.16s ease, background 0.16s ease;
+}
+
+.btn:hover {
+  color: #ffffff;
+  opacity: 0.95;
+  transform: translateY(-1px);
+}
+
+.btn--secondary {
+  background: #ffffff;
+  color: #111827;
+  border-color: #d7dce3;
+}
+
+.btn--secondary:hover {
+  color: #111827;
+  background: #f6f8fb;
+}
+
+.projectHeader {
+  margin-top: 1rem;
+}
+
+.projectHeader h1 {
+  margin-top: 0;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  .muted {
+    color: #a9b3c1;
+  }
+
+  .btn {
+    background: #e7e7e7;
+    color: #0b0d12;
+    border-color: #e7e7e7;
+  }
+
+  .btn:hover {
+    color: #0b0d12;
+    background: #f3f4f6;
+  }
+
+  .btn--secondary {
+    background: #0f1218;
+    color: #e7e7e7;
+    border-color: #232836;
+  }
+
+  .btn--secondary:hover {
+    color: #e7e7e7;
+    background: #1a2030;
+  }
+}

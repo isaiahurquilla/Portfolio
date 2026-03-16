@@ -1,6 +1,24 @@
 import { Link, useParams } from "react-router-dom";
 import { projects } from "../data/projects";
 
+function normalizeLiveDemo(live) {
+  if (!live) return null;
+
+  if (typeof live === "string") {
+    return {
+      url: live,
+      label: "Open Live Demo",
+    };
+  }
+
+  if (!live.url) return null;
+
+  return {
+    label: "Open Live Demo",
+    ...live,
+  };
+}
+
 export default function PortfolioDetail() {
   const { slug } = useParams();
   const project = projects.find((p) => p.slug === slug);
@@ -12,27 +30,31 @@ export default function PortfolioDetail() {
         <p className="muted">
           No project exists for: <strong>{slug}</strong>
         </p>
-        <Link className="btn" to="/portfolio">
-          ← Back to Portfolio
+        <Link className="btn btn--secondary" to="/portfolio">
+          Back to Portfolio
         </Link>
       </section>
     );
   }
 
+  const liveDemo = normalizeLiveDemo(project.live);
+
   return (
     <section className="page">
-      <Link className="btn" to="/portfolio">
-        ← Back to Portfolio
+      <Link className="btn btn--secondary" to="/portfolio">
+        Back to Portfolio
       </Link>
 
-      <h1 style={{ marginTop: "1rem" }}>{project.title}</h1>
-      <p className="muted">{project.description}</p>
+      <div className="projectHeader">
+        <h1>{project.title}</h1>
+        <p className="muted">{project.description}</p>
+      </div>
 
       <h2>Tech Stack</h2>
       <div className="tagRow">
-        {project.techStack.map((t) => (
-          <span key={t} className="tag">
-            {t}
+        {project.techStack.map((tech) => (
+          <span key={tech} className="tag">
+            {tech}
           </span>
         ))}
       </div>
@@ -41,8 +63,8 @@ export default function PortfolioDetail() {
         <>
           <h2>Highlights</h2>
           <ul>
-            {project.highlights.map((h) => (
-              <li key={h}>{h}</li>
+            {project.highlights.map((highlight) => (
+              <li key={highlight}>{highlight}</li>
             ))}
           </ul>
         </>
@@ -51,18 +73,26 @@ export default function PortfolioDetail() {
       <h2>Links</h2>
       <div className="btnRow">
         {project.github ? (
-          <a className="btn" href={project.github} target="_blank" rel="noreferrer">
+          <a
+            className="btn btn--secondary"
+            href={project.github}
+            target="_blank"
+            rel="noreferrer"
+          >
             GitHub Repo
           </a>
         ) : null}
 
-        {project.live ? (
-          <a className="btn" href={project.live} target="_blank" rel="noreferrer">
-            Live Demo
+        {liveDemo ? (
+          <a
+            className="btn btn--secondary"
+            href={liveDemo.url}
+            target="_blank"
+            rel="noreferrer"
+          >
+            {liveDemo.label}
           </a>
-        ) : (
-          <span className="muted">Live demo: not available</span>
-        )}
+        ) : null}
       </div>
     </section>
   );
