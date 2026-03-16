@@ -49,7 +49,7 @@ export const projects = [
     techStack: ["React Native", "Expo", "JavaScript"],
     image: null,
     github: "https://github.com/isaiahurquilla/REPO_LINK_HERE",
-    live: null,
+    live: "https://dbcore4u.vercel.app/",
     highlights: [
       "Branded UI and reusable product components",
       "Responsive layout and clean navigation structure",
