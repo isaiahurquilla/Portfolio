@@ -5,14 +5,15 @@ export default function Resume() {
 
       <h2>Professional Summary</h2>
       <p>
-        Computer Science student at CSUB focused on frontend development and
-        building responsive, user-friendly applications with React, JavaScript,
-        and modern web technologies. Project experience includes developing
-        component-based web and mobile applications, integrating APIs,
-        rendering structured data dynamically, and building clean interfaces for
-        real-world use cases. Seeking an entry-level software engineering
-        opportunity where I can contribute to product development and continue
-        growing as a frontend engineer.
+        Senior Computer Science student at California State University,
+        Bakersfield, with experience building web applications, mobile apps,
+        and interactive games using React, React Native, JavaScript, and
+        TypeScript. Projects include responsive interfaces, API integration,
+        nutrition tracking, and choice-driven gameplay. Published research
+        contributor through the AI Humanoid Robotics Club and an active
+        member of Combat Robotics and MESA. Seeking entry-level opportunities
+        in web, application, or game development, with a secondary interest
+        in data analytics.
       </p>
 
       <h2>Technical Skills</h2>
@@ -26,8 +27,12 @@ export default function Resume() {
           Node.js
         </li>
         <li>
-          <strong>Frontend:</strong> React Router, responsive design, API
-          integration, component-based UI development
+          <strong>Web &amp; App Development:</strong> React Router, responsive
+          design, API integration, reusable components, dynamic data rendering
+        </li>
+        <li>
+          <strong>Game Development:</strong> Interactive storytelling,
+          choice-driven progression, character sprite movement, collectibles
         </li>
         <li>
           <strong>Tools:</strong> Git, GitHub, Vite, npm, VS Code, IntelliJ IDEA
@@ -41,7 +46,7 @@ export default function Resume() {
       <h2>Education</h2>
       <p>
         <strong>California State University, Bakersfield</strong> — B.S. in
-        Computer Science (In Progress)
+        Computer Science — Senior
         <br />
         <strong>Expected Graduation:</strong> 2027
       </p>
@@ -50,9 +55,10 @@ export default function Resume() {
       <ul>
         <li>
           <strong>Story Game</strong> (React Native, Expo, JavaScript) —
-          I developed a story-based game app with interactive elements, moving character sprites, and dynamic story progression.
-          The commentary within the game was dependent on the player's choices and actions, creating a dynamic and personalized experience.
-          This project contained collectables that players could gather throughout the game, adding an element of exploration and reward to the experience, as well as hidden secrets and challenges to keep players engaged.
+          Developed an interactive story game with moving character sprites,
+          choice-driven story progression, and commentary that responds to
+          player actions. Added collectibles, hidden secrets, and challenges
+          to encourage exploration.
         </li>
         <li>
           <strong>About Me App</strong> (React Native, Expo, JavaScript) —
@@ -75,32 +81,39 @@ export default function Resume() {
         </li>
       </ul>
 
-      <h2>Leadership & Activities</h2>
+      <h2>Research &amp; Publications</h2>
       <ul>
         <li>
-          <strong>Combat Robotics Club (CSUB)</strong> — Collaborate on the
+          <strong>
+            Adaptive and Explainable Ball Tracking for the TonyPi Humanoid
+            Robot Under Changing Lighting Conditions
+          </strong>
+          <br />
+          Contributed to a published research paper through the AI Humanoid
+          Robotics Club at CSUB. The paper was presented at the 6th
+          International Mobile, Intelligent, and Ubiquitous Computing
+          Conference (MIUCC-26), organized by Misr International University
+          and sponsored by the IEEE Egypt Section.
+          </li>
+      </ul>
+
+      <h2>Activities &amp; Involvement</h2>
+      <ul>
+        <li>
+          <strong>Combat Robotics Club (CSUB) — Member</strong> — Collaborate on the
           design, assembly, and testing of competition robots using CAD,
           soldering, 3D printing, and team-based problem solving.
         </li>
         <li>
-          <strong>AI Humanoid Robotics Workshop (CSUB)</strong> — Participated
-          in hands-on workshops exploring robotics systems, AI concepts, and
-          collaborative hardware/software builds.
+          <strong>AI Humanoid Robotics Club (CSUB)</strong> — Contributed to
+          published robotics research and participated in hands-on workshops
+          exploring AI concepts, robotics systems, and collaborative hardware
+          and software builds.
         </li>
         <li>
-          <strong>Mesa (CSUB)</strong> — Participated
-          in hands-on workshops exploring ways to integrate technology into education, including coding, robotics, and STEM activities.
-        </li>
-      </ul>
-
-      <h2>Certifications</h2>
-      <ul>
-        <li>
-          <strong>6th International Mobile, Intelligent, and Ubiquitous Computing Conference</strong> 
-          -Contributed to the publication of a research paper entitled 
-          "Adaptive and Explainable Ball Tracking for the TonyPi Humanoid Robot
-           Under Changing Lighting Conditions" which was presented at the MIUCC-26 conference 
-           organized by Misr International University and sponsored by IEEE Egypt Section
+          <strong>MESA (CSUB) — Member</strong> — Participate in workshops
+          exploring technology in education, including coding, robotics,
+          and STEM activities.
         </li>
       </ul>
     </section>
