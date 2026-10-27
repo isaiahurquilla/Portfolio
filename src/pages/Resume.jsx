@@ -49,6 +49,12 @@ export default function Resume() {
       <h2>Projects</h2>
       <ul>
         <li>
+          <strong>Story Game</strong> (React Native, Expo, JavaScript) —
+          I developed a story-based game app with interactive elements, moving character sprites, and dynamic story progression.
+          The commentary within the game was dependent on the player's choices and actions, creating a dynamic and personalized experience.
+          This project contained collectables that players could gather throughout the game, adding an element of exploration and reward to the experience, as well as hidden secrets and challenges to keep players engaged.
+        </li>
+        <li>
           <strong>About Me App</strong> (React Native, Expo, JavaScript) —
           Built a multi-screen mobile app with reusable navigation components
           and organized profile, skills, goals, and gallery views using a
