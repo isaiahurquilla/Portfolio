@@ -93,7 +93,7 @@ export default function Resume() {
           <strong>6th International Mobile, Intelligent, and Ubiquitous Computing Conference</strong> 
           -Contributed to the publication of a research paper entitled 
           "Adaptive and Explainable Ball Tracking for the TonyPi Humanoid Robot
-           Under Changing Lightning Conditions" which was presented at the MIUCC-26 conference 
+           Under Changing Lighting Conditions" which was presented at the MIUCC-26 conference 
            organized by Misr International University and sponsored by IEEE Egypt Section
         </li>
       </ul>
