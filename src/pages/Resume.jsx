@@ -18,7 +18,7 @@ export default function Resume() {
       <h2>Technical Skills</h2>
       <ul>
         <li>
-          <strong>Languages:</strong> JavaScript, TypeScript, Python, Java, C++,
+          <strong>Languages:</strong> JavaScript, TypeScript, Python, Java, C, C++,
           SQL
         </li>
         <li>
@@ -80,6 +80,21 @@ export default function Resume() {
           <strong>AI Humanoid Robotics Workshop (CSUB)</strong> — Participated
           in hands-on workshops exploring robotics systems, AI concepts, and
           collaborative hardware/software builds.
+        </li>
+        <li>
+          <strong>Mesa (CSUB)</strong> — Participated
+          in hands-on workshops exploring ways to integrate technology into education, including coding, robotics, and STEM activities.
+        </li>
+      </ul>
+
+      <h2>Certifications</h2>
+      <ul>
+        <li>
+          <strong>6th International Mobile, Intelligent, and Ubiquitous Computing Conference</strong> 
+          -Contributed to the publication of a research paper entitled 
+          "Adaptive and Explainable Ball Tracking for the TonyPi Humanoid Robot
+           Under Changing Lightning Conditions" which was presented at the MIUCC-26 conference 
+           organized by Misr International University and sponsored by IEEE Egypt Section
         </li>
       </ul>
     </section>
